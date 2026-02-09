@@ -1,0 +1,568 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 16px;
+}
+
+
+
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: white;
+    position: relative;
+    background-color: blue;
+}
+
+
+.logo { 
+    font-weight: 900;
+    font-size: 1.2rem; }
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none; 
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.hire-me {
+    background: #e6ff00; 
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+/* HERO SECTION (IMAGE 1) */
+.hero {
+    
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.6;
+   
+    
+}
+.highlight {
+  color: blue;
+  position: relative;
+}
+.hero-bio, .follow-me {
+    color: #333333 ;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.small-text {
+    max-width: 250px;
+    opacity: 0.8;
+    font-size: 1.1rem;      
+    line-height: 1.6;       
+    max-width: 600px;      
+    color: #666;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 600px; 
+    width: 100%;
+              
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* SERVICES SECTION (IMAGE 2) */
+.services {
+    padding: 100px 50px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    display: inline-block;  
+    border-bottom: 3px solid #5D78DE; 
+    display: inline-block;
+    text-align: center;
+
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px; 
+    
+    
+   
+}
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.services_2 {
+    padding: 100px 50px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.service-card:hover {
+    transform: translateY(-10px) !important;
+    
+}
+.service-card h3 {
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.service-img-container {
+    position: relative;
+    
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.service-img-container img {
+   max-width:  60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12PX;
+    margin-top: 20px
+    
+}
+
+
+.service-intro {
+    margin-bottom: 40px;
+    line-height: 1.4;
+    font-size: 0.9rem !important;
+
+}
+.btn-social .icon {
+   max-width: 20px; 
+    height: 20px; 
+    object-fit: contain; 
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+
+/* --- FOOTER --- */
+footer {
+    background: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.contact-section {
+    padding: 100px 50px;
+    background-color: #f0f0f0; 
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: #fff; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+
+.contact-info {
+    background-color:blue;
+    padding: 60px;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.contact-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.info-item .icon {
+    background: rgba(255, 255, 255, 0.2); 
+   max-width:  40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+.social-links a {
+    color: white;
+    border-bottom: 2px solid var(--accent-yellow);
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+
+.contact-form-wrapper {
+    padding: 60px;
+    background-color: white;
+}
+
+
+.info-item h4 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    font-size: 0.9rem;
+    
+}
+
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 900;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid transparent;
+    background: #f0f2f5;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    
+    background: white;
+    outline: none;
+   
+}
+.btn-submit {
+    
+    color: black;
+    border: none;
+    padding: 20px 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-submit:hover {
+    background-color: blue;
+    transform: translateY(-3px);
+}
+
+/* Style du bouton burger */
+.menu-toggle {
+    display: none; /* Caché sur PC */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10000; /* Au-dessus du menu bleu */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black; /* Ou blanc selon ton fond */
+    transition: 0.3s;
+}
+
+
+/* Style du bouton burger */
+.menu-toggle {
+    display: none; /* Caché sur PC */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10000; /* Au-dessus du menu bleu */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black; /* Ou blanc selon ton fond */
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: flex; } /* On l'affiche sur mobile */
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%; /* Caché à gauche par défaut */
+        width: 40%;
+        height: 100vh;
+        background: #0000ff;
+        z-index: 9999;
+        justify-content: center;
+        transition: 0.4s ease; /* Animation de glissement */
+    }
+
+    .nav-links.is-active {
+        left: 0; 
+    }
+
+    /* Animation du X (ton code du début) */
+    .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; 
+        padding: 20px;
+    }
+
+    .contact-info, .contact-form-wrapper {
+        width: 100%;
+        text-align: center; /* Optionnel : centre le texte pour un look mobile plus propre */
+    }
+
+    
+    .info-item {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+ 
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0; /* Évite les doubles marges */
+    }
+
+    /* 5. On gère les liens sociaux pour qu'ils ne débordent pas */
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-social {
+        width: 100%; /* Les boutons sociaux prennent toute la largeur ou auto */
+        justify-content: center;
+    }
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+.dark-mode .hero-bio, 
+.dark-mode .small-text {
+    color: #bbbbbb;
+}
+
+/* Cartes de services et compétences */
+.dark-mode .service-card {
+    background: #1e1e1e;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.dark-mode .services
+ {
+    background-color:#1e1e1e ;
+}
+.dark-mode .services_2{
+    background-color: #000000;
+}
+
+.dark-mode .service-card p {
+    color: #cccccc;
+}
+
+.dark-mode .section-title {
+    border-bottom-color: #e6ff00;
+}
+
+/* Section Contact */
+.dark-mode .contact-section {
+    background-color: #000000;
+}
+
+.dark-mode .contact-container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .contact-form-wrapper {
+    background-color: #1e1e1e;
+}
+.dark-mode .service-card h3{
+    color: #e6ff00;;
+}
+
+/* Champs de saisie */
+.dark-mode .input-group input, 
+.dark-mode .input-group textarea {
+    background: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.dark-mode .input-group label {
+    color: #e6ff00; /* Jaune fluo pour le contraste */
+}
